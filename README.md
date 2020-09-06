@@ -1,28 +1,47 @@
-# Adonis API application
+# Weather Station API
 
-This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
+Weather Station API merupakan sebuah stasiun cuaca dalam bentuk Rest API dan terintegrasi langsung pada alat pengukurnya, API ini masih dalam `development` namun saya dokumentasikan dari awal pembuatanya.
 
-1. Bodyparser
-2. Authentication
-3. CORS
-4. Lucid ORM
-5. Migrations and seeds
+## Pendahuluan
 
-## Setup
+Weather Station API ini di buat untuk mengukur cuaca yang ada di daerah terpencil yang tidak terjangkau oleh `BMKG Badan Meteorologi Klimatologi dan Geofisika Indonesia` dan sebagai awalan saya mencoba mendalami `IoT (Internet Of Think)`.
 
-Use the adonis command to install the blueprint
+WS API ini pasti akan terintegrasi dengan API lainya, mau itu API dari `BMKG` ataupun dari API lainya. 
 
-```bash
-adonis new yardstick --api-only
+## Kontribusi
+
+### Sebelum Kontribusi
+
+- Pastikan sudah terinstall `adonis cli`
+- Pastikan sudah install nodejs `v10` atau lebih terbaru
+- Pastikan sudah install mysql
+
+
+Untuk berkontribusi silakan melihat panduan dibawah ini:
+
+1. Clone Project ini https://github.com/dianhan8/weather-station
+
+```cmd
+git clone https://github.com/dianhan8/weather-station
+```
+2. cd ke folders project
+```cmd
+cd weather-station
 ```
 
-or manually clone the repo and then run `npm install`.
+3. Install Dependency
+```cmd
+npm install
+```
 
-
-### Migrations
-
-Run the following command to run startup migrations.
-
-```js
+4. Migrations Database
+Pastikan `mysql` anda sudah menyala
+```cmd
 adonis migration:run
 ```
+
+## Kontak
+me on facebook : <a href="https://www.facebook.com/dian.handiyansah" target="_blank">Dian Handiyansah</a>
+
+## Lisensi
+MIT 2020
